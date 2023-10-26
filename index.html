@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<body>
+  <section class="container">
+    <h1>Meme Generator</h1>
+    <p>Choose your own image and text to create a meme!</p>
+    <form action="" id="submitForm">
+      <label for="imageURL">Image URL:</label>
+      <input id="imageURLInput"type="text" placeholder="URL for your meme image"><br/>
+
+      <label for="meme_top">Text for top of meme:</label>
+      <input id="memeTopInput" type="text" placeholder="(Optional)"><br/>
+
+      <label for="meme_bottom">Text for bottom of meme:</label>
+      <input id="memeBottomInput" type="text" placeholder="(Optional)"><br/>
+      <div class="'divContainer">
+        <legend>Please select your preferred text color (Required):</legend>
+        <input type="radio" id="textChoiceWhite" name="textColor" value="white" />
+        <label id="textWhite" for="textChoiceWhite">White</label>
+        <input type="radio" id="textChoiceBlack" name="textColor" value="black" />
+        <label id="textBlack"for="textChoiceBlack">Black</label>
+      </div>
+      <button id="generate" type="submit">Generate Meme</button>
+    </form>
+
+  </section>
+  <main id="memeLocation">
+
+  </main>
+  <script src="memegen.js"></script>
+</body>
+</html>
